@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fatebook signup</title>
+</head>
+<body>
+     <h3>Register-Life Big Data</h3>
+
+   <form method="post">
+     {% csrf_token %}
+     <label for="name">name</label>
+     <input type="text" name="name" id="name" placeholder="Enter Your Name"/><br><br>
+
+     <label for="gender">gender</label>
+     <label>
+         <input type="radio" name="gender" value="male">
+         Male
+     </label>
+
+     <label>
+        <input type="radio" name="gender" value="female">
+        Female
+     </label>
+
+     <label>
+        <input type="radio" name="gender" value="others">
+        Others
+     </label><br><br>
+
+     <label for="date">date type</label>
+     <label>
+         <input type="radio" name="solar-calender" value="solar-calender">
+         solar calendar
+     </label>
+
+     <label>
+        <input type="radio" name="lunar calender" value="lunar calender">
+        lunar calendar
+     </label><br><br>
+
+     <label for="date-of-birth">Date Of Birth:</label>
+     <input type="date" id="date-of-birth" name="date-of-birth"><br><br>
+
+     <label for="date-of-birth">Birth Time:</label>
+     <input type="time" id="date-of-time" name="date-of-time"><br><br>
+
+     <label for="email">Email</label>
+     <input type="email" name="email" id="email" placeholder="Enter Your Email"><br><br>
+
+     <label for="pass1">Password</label>
+     <input type="password" name="pass1" id="pass1" placeholder="Enter Your Password"><br><br>
+
+     <label for="name">Confirm Password</label>
+     <input type="password" name="pass2" id="pass2" placeholder="Confirm Your Password"><br><br>
+
+       <button type="submit"><a href="signin">Signup</a></button>
+   </form>
+
+
+</body>
+</html>
